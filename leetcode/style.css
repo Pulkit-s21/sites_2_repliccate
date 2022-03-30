@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+:root{
+     --main-bg: gainsboro;
+     --input-pad: .5rem 1rem;
+     --btn-pad: .75rem 1rem;
+}
+
+*,
+*::before,
+*::after{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html,body{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; */
+    font-family: 'Rubik', sans-serif;
+}
+
+a{
+     text-decoration: none;
+     color: gray;
+}
+
+header{
+     min-height: 6vh;
+     background-color: #fff;
+}
+
+.head-logo{
+     width: 30px;
+     aspect-ratio: 1 / 1;
+}
+
+.left-links{
+     display: flex;
+     align-items: center;
+}
+
+nav{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+ul{
+     display: flex;
+     list-style-type: none;
+     align-items: center;
+     /* never forget to do this...ul ol always have some margin and padding to them */
+     margin: 0;
+     padding: 0;
+}
+
+ul li{
+     margin: .5rem;
+     text-transform: capitalize;
+}
+
+ul .name{
+     margin-left: -4px;
+}
+
+ul .store{
+     color: orange;
+     margin-left: -4px;
+}
+
+ul .premium{
+     color: orange;
+     border: 1px solid orange;
+     border-radius: 8px;
+     padding: 5px;
+}
+
+main{
+    background-color: var(--main-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 88vh;
+}
+
+main .card{
+     width: 31rem;
+     height: 40rem;
+     padding: 3rem;
+     background-color: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.card .logo{
+     width: 80px;
+     aspect-ratio: 1 / 1;
+}
+
+.card .title{
+     font-family: 'Merienda', cursive;
+     font-size: 30px;
+     font-weight: 500;
+}
+
+.card input{
+     width: 100%;
+     padding: var(--input-pad);
+     margin: .5rem 0rem;
+     border-radius: 2px;
+     font-size: 18px;
+     color: rgb(182, 176, 176);
+     border: 1px solid gainsboro;
+}
+
+.card .btn{
+     width: 100%;
+     background-image: linear-gradient(to right, #243949 0%, #3d6280 100%);
+     border: none;
+     border-radius: 5px;
+     margin: .7rem;
+     padding: var(--btn-pad);
+     color: #fff;
+     font-size: 20px;
+}
+
+.card .options{
+     width: 100%;
+     display: flex;
+     margin-top: .5rem;
+     justify-content: space-between;
+}
+
+.card .icons{
+     background-color: gainsboro;
+     border-radius: 50px;
+     padding: .6rem;
+     font-size: 18px;
+     margin: .3rem;
+}
+
+.card .sign-in{
+     color: rgb(141, 138, 138);
+     text-align: center;
+     margin: 1rem 0rem;
+}
+
+.card .underline{
+     text-decoration: underline;
+}
+
+.card p{
+     color: rgb(189, 177, 177);
+     font-size: 17px;
+     text-align: center;
+}
+
+.card p > a{
+     color: rgb(189, 177, 177);
+}
+
+footer{
+     min-height: 6vh;
+     background-color: #fff;
+}
+
+.f-item{
+     padding-right: .5rem;
+     border-right: 1px solid gray;
+}
+
+.f-item1{
+     border-right: none;
+}
+
+.copyright{
+     font-weight: 400;
+     color: rgb(172, 168, 168);
+}
+
+.usa{
+     width: 20px;
+     aspect-ratio: 1 / 1;
+}
