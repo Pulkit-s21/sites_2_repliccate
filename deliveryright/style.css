@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+
+*,
+*::before,
+*::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+html,
+body {
+     /* display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; */
+     font-family: 'Rubik', sans-serif;
+}
+
+ul {
+     margin: 0;
+     padding: 0;
+     display: flex;
+}
+
+a {
+     text-decoration: none;
+     color: #fff;
+}
+
+li {
+     list-style-type: none;
+     margin: 0 .5rem;
+     font-size: 1.1rem;
+}
+
+li:hover {
+     color: gainsboro;
+}
+
+nav {
+     min-height: 5vh;
+     color: #fff;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 1rem;
+     background-color: rgb(91, 91, 241);
+}
+
+.logo h5 {
+     font-size: 2rem;
+}
+
+.login {
+     background-color: rgb(255, 115, 0);
+     padding: .1rem .75rem;
+     border-radius: 10px;
+     margin-left: .25rem;
+}
+
+.top-half {
+     padding: 3rem;
+     min-height: 45vh;
+     background-color: rgb(91, 91, 241);
+}
+
+strong {
+     text-transform: capitalize;
+}
+
+.left-side {
+     width: calc(100%/3 + .5rem);
+}
+
+.left-side h2 {
+     color: #fff;
+     font-size: 3rem;
+     font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.left-side p {
+     font-weight: 300;
+     color: #fff;
+     font-size: 1.5rem;
+}
+
+.buttons {
+     display: flex;
+     gap: 2rem;
+}
+
+.btn {
+     background-color: transparent;
+     border-radius: 1rem;
+     color: #fff;
+     border: 1px solid #fff;
+     font-size: 1.25rem;
+     padding: .2rem 2rem;
+}
+
+.order {
+     background-color: rgb(255, 115, 0);
+     border: none;
+     transition: all 150ms ease;
+}
+
+.order:hover {
+     color: rgb(255, 115, 0);
+     background-color: white;
+}
