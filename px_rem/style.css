@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Lucida Grande", Verdana, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.scroll-line{
+    height: 2px;
+    width: 0%;
+    background-color: #1a79ff;
+    margin-bottom: -2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.container h2 span{
+    text-transform: uppercase;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.inputs label{
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    display: block;
+}
+
+.inputs input{
+    padding: .25rem 1.25rem;
+    font-size: 2.4rem;
+    text-align: center;
+    border: 1px solid gainsboro;
+    caret-color: red;
+    outline: none;
+}
+
+/* input:focus{
+    border: #1a79ff;
+} */
+
+.together{
+    position: relative;
+}
+
+abbr{
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    bottom: 0;
+    text-transform: none;
+    opacity: 0.6;
+}
+
+/* this all centers it inside the input box */
+abbr::before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .75rem;
+}
+
+.swap{
+    color: #1a79ff;
+    font-size: 1.1rem;
+    animation: spin 3s ease-in-out infinite alternate;
+    cursor: pointer;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.calculated{
+    margin: 4em 0;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #777;
+}
+
+.inline-setting input{
+    color: #777;
+    border-color: transparent;
+    background-color: transparent;
+    outline: none;
+}
+
+/* not working..want it to be next to the input box */
+/* .inline-setting::after{
+    content: "";
+    width: 1em;
+    height: 1em;
+    color: red;
+    display: inline-block;
+    margin-left: -1em;
+    background-image: url('data:image/svg+xml,%3Csvg id="icon-pencil" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="silver"%3E %3Cpath d=" M24 0 l-5 5 8 8 5-5-8-8 z m-8 8 l-16 16 v8 h8 l16-16-8-8 z " /%3E %3C/g%3E%3C/svg%3E');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+} */
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.socials a{
+    color: rgb(185, 181, 181);
+    margin: 1em;
+    border: 1px solid rgb(185, 181, 181);
+    border-radius: 50%;
+    padding: .5rem;
+    transition: all 100ms ease-in-out;
+}
+
+.socials a:hover,
+.socials a:focus{
+    color: #1a79ff;
+    opacity: .7;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #000;
+    color: #fff;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+footer span{
+    color: #2690d4;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px){
+    .inputs{
+        flex-direction: column;
+    }
+    .inputs input{
+        width: 20rem;
+        font-size: 2rem;
+    }
+    abbr{
+        font-size: 1rem;
+        position: absolute;
+        top: 0;
+        right: 4rem;
+        bottom: 0;
+        text-transform: none;
+        opacity: 0.6;
+    }
+    .calculated{
+        margin: 2em 0;
+        text-align: center;
+        font-size: 1rem;
+        color: #777;
+    }
+    .swap{
+        color: #1a79ff;
+        font-size: 1.6rem;
+        animation: spin 3s ease-in-out infinite alternate;
+    }
+    footer{
+        font-size: .9rem;
+    }
+}
